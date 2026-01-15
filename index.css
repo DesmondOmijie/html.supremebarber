@@ -1,0 +1,269 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+html {
+	font-size: 62.5%;
+	font-family: sans-serif;
+}
+
+nav {
+	display: flex;
+	justify-content: space-around;
+	padding: 1rem;
+	background: black;
+}
+
+.logo {
+	text-align: center;
+}
+
+h1 {
+	font-family: 'playfair display';
+	font-size: 3rem;
+	color:white;
+}
+
+span {
+	color: gold;
+}
+
+.h1 {
+	font-family: 'poppins';
+	font-size: 1.9rem;
+	color: gold;
+}
+
+ul {
+	display: flex;
+    gap: 3rem;
+}
+
+ul li {
+	list-style: none;
+	font-size: 2.4rem;
+}
+
+ul li a {
+	font-family: 'montserrat';
+	text-decoration: none;
+	color: white;
+	cursor: pointer;
+	transition: 0.2s ease-in-out;
+
+}
+
+/*style for button effects..*/
+
+
+ul li a:hover {
+	color: gold;
+	text-decoration: underline;
+	
+
+}
+
+
+/*ul li a:active {
+	transform: scale(0.9);
+}*/
+
+/*below is style for the main section*/
+
+.hero {
+	
+	background-image: url(./images/hero.png);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 70vh;
+	position: relative;
+	max-width: 100vw;
+
+}
+
+
+.subhero {
+	padding-top: 11rem;
+	margin-left: 20rem;
+}
+
+h2 {
+	font-family:'playfair display';
+	font-size: 4rem;
+	color: white;
+}
+
+.h2 {
+	font-family: 'poppins';
+	color: white;
+	font-size: 1.8rem;
+	padding: 1rem;
+}
+
+
+button {
+	font-family: 'montserrat';
+	font-size: 2rem;
+	width: 20rem;
+	height: 5rem;
+	color: white;
+	background-color:darkgoldenrod;
+	border-radius: 1rem;
+	transition: 0.3s ease-in-out ;
+}
+
+
+button:hover {
+	background-color: darkorange;
+	color: black;
+
+}
+
+/*style for the footer*/
+
+footer {
+	background-color: black;
+	height: 11vh;
+}
+
+.div1 {
+	display: flex;
+	background-color: black;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+
+}
+
+.div1 p {
+	font-family: 'poppins';
+	color: white;
+	font-size: 2rem;
+	padding: 2rem;
+}
+
+h3 {
+	font-family: 'playfair display';
+	font-size: 2.5rem;
+	color: white;
+	text-align: center;
+}
+
+.gold {
+	border: 0.001rem gold solid;
+}
+
+
+.div2 {
+	display: flex;
+	background-color: black;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+
+}
+
+
+.div2 p {
+	font-family: 'poppins';
+	color: white;
+	font-size: 1.8rem;
+	padding: 1rem;
+}
+
+
+/*responsive design ...*/
+
+/*@media(max-width: )*/
+
+@media (max-width: 480px) {
+	html {
+		font-size: 43.75%;
+	}
+  nav{
+  	max-width: 100vw;
+  	display: flex;
+  	flex-direction: column;
+  }
+
+  ul {
+  	margin-top: 1rem;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	gap: 1rem;
+  }
+
+  .hero {
+  	  background-image: url(./images/hero.png);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 40vh;
+	position: relative;
+	max-width: 100vw;
+  }
+
+  .subhero {
+  	margin-left: 2rem;
+  	padding-top:4rem ;
+  }
+
+  button {
+  	margin-top: 5rem;
+  	/*margin-left: 22rem;*/
+  }
+
+  .div1 {
+  	 display: flex;
+  	 flex-direction: column;
+  	 align-items: center;
+  	 gap: 0.5rem;
+  }
+
+  .div1 {
+  	padding: 0.5rem;
+  }
+
+
+  h3 {
+  	padding: 2rem;
+  }
+
+  .div2 {
+  	 display: flex;
+  	 flex-direction: column;
+  	 align-items: center;
+  	 gap: 0.5rem;
+  }
+
+  .div2 {
+  	padding: 0.5rem;
+  }
+
+}
+
+@media (max-width: 767px){
+    html {
+    	font-size: 50.4%;
+    }
+
+	nav{
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+	}
+
+	ul {
+		align-items: center;
+		justify-content: center;
+	}
+
+	.subhero {
+		margin-left: 4rem;
+	}
+}
